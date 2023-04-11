@@ -19,7 +19,7 @@
 export default { name: "home" };
 </script>
 <script setup>
-import { onActivated, ref, watch } from "vue";
+import { onActivated, ref, watch, computed } from "vue";
 import useHomeStore from "@/stores/modules/home";
 import HomeNavBar from "./cpns/home-nav-bar.vue";
 import HomeSearchBox from "./cpns/home-search-box.vue";
@@ -28,7 +28,7 @@ import HomeContent from "./cpns/home-content.vue";
 import SearchBar from "@/components/search-bar/search-bar.vue";
 
 import useScroll from "@/hooks/useScroll";
-import { computed } from "@vue/reactivity";
+
 
 // 发送网络请求
 const homeStore = useHomeStore();

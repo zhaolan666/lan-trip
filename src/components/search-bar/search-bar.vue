@@ -1,11 +1,3 @@
-<!--
- * @Author: 明渡
- * @Date: 2022-12-24 12:38:25
- * @LastEditTime: 2022-12-25 11:46:55
- * @LastEditors: LAPTOP-6HFF930K
- * @Description: In User Settings Edit
- * @FilePath: \lan-trip\src\components\search-bar\search-bar.vue
--->
 <template>
   <div class="search">
     <div class="select-time">
@@ -30,7 +22,7 @@
 <script setup>
 import useMainStore from "@/stores/modules/main";
 import { formatMonthDay } from "@/utils/format_date";
-import { computed } from "@vue/reactivity";
+import { computed } from "vue";
 import { storeToRefs } from "pinia";
 
 const mainStore = useMainStore();
@@ -78,6 +70,7 @@ const endDateStr = computed(() => formatMonthDay(endDate.value, "MM.DD"));
       align-items: center;
       line-height: normal;
       font-size: 10px;
+
       .name {
         font-size: 10px;
       }

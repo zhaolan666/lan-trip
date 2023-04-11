@@ -1,6 +1,6 @@
 <template>
   <div class="nav-bar">
-    <div class="title">岚山旅途</div>
+    <div class="title">澜山旅途</div>
   </div>
 </template>
 

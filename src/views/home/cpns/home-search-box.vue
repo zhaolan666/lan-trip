@@ -10,10 +10,7 @@
     </div>
 
     <!-- 日期范围 -->
-    <div
-      class="section date-range bottom-gray-line"
-      @click="showCalendar = true"
-    >
+    <div class="section date-range bottom-gray-line" @click="showCalendar = true">
       <div class="start">
         <div class="date">
           <span class="tip">入住</span>
@@ -28,14 +25,8 @@
         </div>
       </div>
     </div>
-    <van-calendar
-      v-model:show="showCalendar"
-      type="range"
-      color="#ff9854"
-      :round="false"
-      :show-confirm="false"
-      @confirm="onConfirm"
-    />
+    <van-calendar v-model:show="showCalendar" type="range" color="#ff9854" :round="false" :show-confirm="false"
+      @confirm="onConfirm" />
 
     <!-- 价格/人数选择 -->
     <div class="section price-counter bottom-gray-line">
@@ -48,13 +39,10 @@
     <!-- 热门建议 -->
     <div class="section hot-suggests">
       <template v-for="(item, index) in hotSuggests" :key="index">
-        <div
-          class="item"
-          :style="{
-            color: item.tagText.color,
-            background: item.tagText.background.color,
-          }"
-        >
+        <div class="item" :style="{
+          color: item.tagText.color,
+          background: item.tagText.background.color,
+        }">
           {{ item.tagText.text }}
         </div>
       </template>
@@ -70,12 +58,11 @@
 <script setup>
 import useCityStore from "@/stores/modules/city";
 import { storeToRefs } from "pinia";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useRouter } from "vue-router";
 import useHomeStore from "@/stores/modules/home";
 import { formatMonthDay, getDiffDays } from "@/utils/format_date";
 import useMainStore from "@/stores/modules/main";
-import { computed } from "@vue/reactivity";
 
 const router = useRouter();
 
@@ -216,6 +203,7 @@ const searchBtnClick = () => {
 
 .date-range {
   height: 44px;
+
   .stay {
     flex: 1;
     text-align: center;

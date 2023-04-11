@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # lan-trip
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -28,4 +27,22 @@ npm run dev
 ```sh
 npm run build
 ```
+## Show Time
+- home
+![home](./public/publish-img/home.png)
+- date-picker
+![date-picker](./public/publish-img/date-picker.png)
+- hot-choice
+![hot-choice](./public/publish-img/hot-choice.png)
+- home-detail
+![home-detail](./public/publish-img/home-detail.png)
+- home-description
+![home-description](./public/publish-img/home-description.png)
+- hot-comment
+![hot-comment](./public/publish-img/hot-comment.png)
+- near-the-location
+![near-the-location](./public/publish-img/near-the-location.png)
 
+
+## License
+MIT
